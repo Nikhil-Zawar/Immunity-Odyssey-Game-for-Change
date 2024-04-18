@@ -1,0 +1,129 @@
+-------------LEVEL 1--------------------------
+Level 1 - 
+Welcome to Level 1!
+Objective - You will know about Alzheimers:
+Point1 - Alzheimer’s disease causes a decline in memory, thinking, learning and organizing skills over time. 
+Point2 - It’s the most common cause of dementia and usually affects people over the age of 65.
+Point3 - There’s no cure for Alzheimer’s, but certain medications and therapies can help manage symptoms temporarily.
+Point4 - Dementia describes the state of a person’s mental function. It’s not a specific disease.
+Point5 - A person with dementia has a change in or decline in memory, reasoning, language, behaviour.
+Point6 - At the most severe stage, a person depends completely on others for help with simple daily tasks.
+
+QUIZ LEVEL1 - 
+Question - What points from below are correct about Alzheimer's:
+1. Alzheimer is curable.
+2. Alzheimer’s disease (AD) is the most common cause of dementia.
+3. Dementia and Alzheimer are the same.
+4. Dementia limits the daily functioning of the person over time.
+
+(If 2,4 then) LEVEL 1 PASSED!
+(Else) restart level 1.
+
+
+
+
+-------------LEVEL 2--------------------------
+Level 2 - 
+Welcome to Level 2!
+Objective - In this level you will know about Alzerimer and Dementia:
+Point1 - Dementia is a syndrome that can be caused by a number of diseases which over time destroy nerve cells. 
+Point2 - Dementia has physical, psychological, social and economic impacts.
+Point3 - Smoking, physically inactive, high blood pressure and sugar , obesity, depression increase the risk of dementia.
+Point4 - Stages of Alzheimer start from preclinical Alzheimer, then mild cognitive impairment and finally severe dementia.
+Point5 - Alzheimer’s disease is common. It affects approximately 24 million people across the world.
+Point6 - In advanced stages, severe loss of brain function can cause dehydration, malnutrition or infection. 
+
+QUIZ LEVEL2 - 
+Question - What points from below are correct about Dementia and Alzheimer:
+1. People with AD in the preclinical stage typically have no symptoms (are asymptomatic).
+2. Alzheimer's disease causes a decline in the ability to make sensible decisions and judgments.
+3. Cause of Alzheimer is failure of muscle proteins to function.
+4. Alzheimer causes the brain to swell and brain cells to die.
+
+
+(If 1 and 2  then) LEVEL 2 PASSED!
+(Else) restart level 2.
+
+--------------LEVEL 3------------------------
+Level 3 - 
+Welcome to Level 3!
+Objective - In this level you will know about symptoms and signs of Alzheimer and Dementia
+Point1 - Memory loss is the key symptom of Alzheimer's disease.
+Point2 - Early signs include difficulty remembering recent events or conversations. 
+Point3 - Everyone has memory lapses at times, but the memory loss associated with Alzheimer's disease persists and gets worse. 
+Point4 - Alzheimer's disease causes difficulty concentrating and thinking, especially about abstract concepts such as numbers.
+Point5 - Brain changes that occur in Alzheimer's disease can affect moods and behaviors.
+Point6 - In the final stage of Alzheimer’s, the person often becomes vulnerable to infections, especially pneumonia.
+
+QUIZ LEVEL3 -
+Question - Which of the following is a key symptom of Alzheimer's disease and dementia?
+1. Difficulty remembering past events
+2. Enhanced concentration and abstract thinking abilities
+3. Improved memory retention over time
+4. Persistent memory loss, especially regarding recent events or conversations
+
+(If  4 then) LEVEL 3 Passed!
+(Else) restart level 3.
+
+--------------LEVEL 4--------------------------
+Level 4 - 
+Objective - In this level you will learn about the Diagnosis and Tests for Alzheimer and Dementia.
+Point1 - An important part of diagnosing Alzheimer's disease includes being able to explain your symptoms. 
+Point2 - Input from a close family member or friend about the symptoms and their impact on the daily life helps. 
+Point3 - Biomarker tests include specific types of PET scans and tests that measure amyloid and tau proteins in the blood fluid.
+Point4 - Diagnosing Alzheimer's disease would likely include physical and neurological exam, lab tests, neuropsychological testing.
+Point5 - Brain imaging by MRI or CT scan is used to pinpoint visible changes related to conditions other than Alzheimer's disease.
+Point6 - During a PET scan, a low-level radioactive tracer is injected into the blood to reveal a particular feature in the brain.
+
+QUIZ LEVEL4-
+Question - What are some methods used in diagnosing Alzheimer's disease and dementia?
+1. Self-diagnosis based on internet research
+2. Physical and neurological exams
+3. Astrology readings
+4. An MRI is generally preferred to a CT scan to evaluate dementia.
+
+(IF 2 and 4) then LEVEL 4 Passed!
+(Else) restart level 4.
+
+
+
+--------------LEVEL 5--------------------------
+Level 5 - 
+Objective - In this level you will learn about the Management and Treatment of Alzheimer and Dementia.
+Point1 - There’s no cure for Alzheimer’s disease, but certain medications can temporarily slow the worsening of dementia symptoms.
+Point2 - Beginning treatment as early as possible for Alzheimer’s could help maintain daily functioning for a while. 
+Point3 - The FDA has approved two types of drugs to treat Alzheimer's disease: Cholinesterase inhibitors and NMDA antagonists.
+Point4 - The FDA has given accelerated approval for aducanumab, the first disease-modifying therapy for Alzheimer’s disease. 
+Point5 - Medications that may help in some are antidepressants, anti-anziety drugs, anticonvulsant and antipsychotic drugs.
+Point6 - Memantine is FDA-approved for treating moderate to severe Alzheimer’s disease. It helps keep certain brain cells healthier.
+
+QUIZ LEVEL5-
+Question - 
+What are some methods used in managing and treating Alzheimer's disease and dementia?
+1. Meditation and yoga
+2. Herbal remedies and supplements
+3. Pharmacological interventions such as cholinesterase inhibitors and NMDA antagonists
+4. Medicines to control blood pressure and cholesterol can prevent additional damage to the brain
+
+(IF 3 and 4) then LEVEL 5 Passed!
+(Else) restart level 5.
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+* the points are generaly thought of and worried about
+* small and concise points, which keeps the game interesting
+* prepared personalized questionarrie for the different diseases and conditions
+* The complexity of levels increase with levels
+* progressive information guides the player to take the information in a effective manner
+like first intro, then general info,  signs symptoms, then Diagnosis, then management and treatment
+* the questions aim to break the general perceptions or stereotypes
+* the questions also teach sometime, the questions are different from the knowledge points so the importance of level also increases
+

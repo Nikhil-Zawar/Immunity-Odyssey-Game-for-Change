@@ -1,0 +1,125 @@
+-------------LEVEL 1--------------------------
+Level 1 - 
+Welcome to Level 1!
+Objective - You will know about Heart Attack
+Point1 - A heart attack is a condition resulting because of restricted blood flow to your heart muscle.
+Point2 - It generally occurs due to blockage in one or many heart's arteries.
+Point3 - Due to lack of blood flow, pumping of blood to body is disrupted, leading to death if not treated.
+Point4 - The blockage is usually due to a buildup of fat, cholestrol-containing deposists called plaques.
+Point5 - If a plaque ruptures, a blood clot is formed causing a attack and killing tissue in heart muscle.
+Point6 - Heart attack is very commonly due to coronary artery disease and is cause of most deaths.
+
+QUIZ LEVEL1 - 
+Question - What points from below are correct about Type2 diabetes:
+1. Heart Attack is due to physical injury on the heart or its arteries.
+2. Heart Attack is a normal condition and no special help is required.
+3. Heart Attack is also known as Myocardial Infarction.
+4. Heart Attack is also called cardiac arrest.
+
+(If then) LEVEL 1 PASSED!
+(Else) restart level 1.
+
+
+
+
+-------------LEVEL 2--------------------------
+Level 2 - 
+Welcome to Level 2!
+Objective - In this level you will know about Cardiac Arrest :
+Point1 - Sudden Cardiac Arrest is the sudden loss of all heart activity due to irregular heart rhythm.
+Point2 - Without immediate treatment, sudden cardiac arrest can lead to death.
+Point3 - Sudden cardiac arrest isn't the same as a heart attack.Sudden cardiac arrest is not due to blockage.
+Point4 - Emergency treatment include CPR and shocks to the heart with automated external defibrillator (AED).
+Point5 - Sudden cardiac arrest can happen in people with and without heart diseases. 
+Point6 - Abnormal heart rhythms (arrhthymias) cause most sudden cardiac arrests.
+
+QUIZ LEVEL2 - 
+Question - What points from below are correct about Cardiac Arrest:
+1. If a person suffers sudden chest pain, then wait for emergency services to come help.
+2. Cardiac Arrest happens due to heavy blockage of heart arteries.
+3. Cardiac Arrest can only happen if you've got any heart diseases.
+4. Emergency treatment for cardiac arrest include giving CPR with regular resxue breaths.
+
+
+(If 4 then) LEVEL 2 PASSED!
+(Else) restart level 2.
+
+--------------LEVEL 3------------------------
+Level 3 - 
+Welcome to Level 3!
+Objective - In this level you will know about symptoms and signs of heart attack:
+Point1 - Symptoms include chest pain, troubled breathing, insomnia, nausea, dizziness.
+Point2 - People assigned male at birth have different symptoms than those assigned female.
+Point3 - Females are gonna feel less chest pain or discomfort and more fatigue and insomnia.
+Point4 - Sometimes, the first symptom sign of a heart attack is sudden cardiac arrest.
+Point5 - Symptoms of cardiac arrest include heart attack, chest pain, fainting, brugada syndrome.
+Point6 - Cardiac Arrest can result due to heart valve disease, cardiomyopathy, history of fainting.
+
+QUIZ LEVEL3 -
+Question - Which of the following is a common symptom of both a heart attack and cardiac arrest?
+1. Chest pain or discomfort
+2. Numbness or tingling in the extremities
+3. Sudden loss of consciousness
+4. Difficulty breathing or shortness of breath
+
+(If 1 then) LEVEL 3 Passed!
+(Else) restart level 3.
+
+--------------LEVEL 4--------------------------
+Level 4 - 
+Objective - In this level you will learn about the Diagnosis and Tests for Heart Attack.
+Point1 - For diagnosis, if you have heart attack symptoms, you should undergo a physical examination.
+Point2 - Many tests are performed like blood tests, ECG, Echocardiogram, Coronary Angiogram, Heart MRI.
+Point3 - An echocardiogram uses sound waves to create an image of the heart's chambers and valves.
+Point4 - MRI test uses powerful magnetic field to create an image of heart which can show the desired problems.
+Point5 - In the case of Cardiac arrests quick diagnosis is required otherwise the consition can be fatal.
+Point6 - A person's symptoms are often the best way to diagnose cardiac arrest if they are unconscious.
+
+QUIZ LEVEL4-
+Question - Which of the following statements about diagnosis and tests for heart attack is/are correct?
+1. A physical examination is typically conducted if heart attack symptoms are present.
+2. Blood tests, ECG, echocardiogram, coronary angiogram, and heart MRI are commonly performed tests for diagnosis.
+3. An echocardiogram utilizes magnetic waves to generate an image of the heart's chambers and valves.
+4. MRI testing employs a powerful sound waves to produce an image of the heart, revealing potential issues.
+(IF 1 and 2) then LEVEL 4 Passed!
+(Else) restart level 4.
+
+
+
+--------------LEVEL 5--------------------------
+Level 5 - 
+Objective - In this level you will learn about the Management and Treatment of heart attacks.
+Point1 - Treating a heart attack means restoring blood flow to the affected heart muscle as soon as possible.
+Point2 - After attack treatment includes medications for anti-clotting, thrombolytic, anti-arrhthymias.
+Point3 - People having trouble breathing or with low blood oxygen levels often receive supplementary oxygen.
+Point4 - Angioplasty, pacemaker, bypass surgery are the most used treatments and in some cases heart transplant.
+Point5 - Sudden cardiac arrest can be fatal if it lasts longer than eight minutes without CPR. Hence perform CPR.
+Point6 - Use an AED, if available. CPR with defibrillator rescues a person from sudden cardiac arrest.
+
+QUIZ LEVEL5-
+Question - Choose the correct option(s):
+1. Defibrillation can restart the person's heart if they haven't received a shock from an AED yet.
+2. Treating heart attack means increasing oxygen level of the body.
+3. Angioplasty opens the blocked artery by using a balloon or by removing the plaque buildup.
+4. Morphine is administered as a pain medication which helps alleviate chest pain.
+
+(IF 1 and 3 and 4) then LEVEL 5 Passed!
+(Else) restart level 5.
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+* the points are generaly thought of and worried about
+* small and concise points, which keeps the game interesting
+* prepared personalized questionarrie for the different diseases and conditions
+* The complexity of levels increase with levels
+* progressive information guides the player to take the information in a effective manner
+like first intro, then general info,  signs symptoms, then Diagnosis, then management and treatment
+* the questions aim to break the general perceptions or stereotypes
+* the questions also teach sometime, the questions are different from the knowledge points so the importance of level also increases
+

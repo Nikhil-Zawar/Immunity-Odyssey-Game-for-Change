@@ -1,0 +1,134 @@
+-------------LEVEL 1--------------------------
+Level 1 - 
+Welcome to Level 1!
+Objective - You will know about HIV 
+Point1 - HIV stands for human autoimmunodeficiency virus.
+Point2 - HIV infects white blood cells of your immune system causing your white blood cell count to drop.
+Point3 - HIV is called a retrovirus, since it works backward to insert its instructions into your DNA.
+Point4 - Initially, HIV makes you feel sick with flu-like symptoms,thereby hiding noticeable symptoms.
+Point5 - HIV is spread by body fluids like sperms and vaginal fluid and not by hugs, kisses.
+Point6 - When you begin to get certain illnesses that healthy people don't get, HIV has progressed to AIDS.
+
+QUIZ LEVEL1 - 
+Question - What points from below are correct about HIV:
+1. HIV stands for hetero-immunodeficiency virus
+2. HIV is called a retro virus, since it works backwards.
+3. HIV infects red blood cells of your immune system causing your red blood cell count to drop.
+4. HIV can spread by sharing food with an infected person.
+
+(If 2 then) LEVEL 1 PASSED!
+(Else) restart level 1.
+
+
+
+
+-------------LEVEL 2--------------------------
+Level 2 - 
+Welcome to Level 2!
+Objective - In this level you will know about AIDS
+Point1 - AIDS stands for acquired immunodeficiency syndrome.
+Point2 - AIDS is the final and most serious stage of an HIV infection.
+Point3 - People with AIDS have very low counts of white blood cells and severely damaged immune systems.
+Point4 - If you don't have HIV, you won't get AIDS. With HIV, treatment might help you not get AIDS at all.  
+Point5 - Without treatment, almost all people living with HIV will advance to AIDS.
+Point6 - AIDS can cause rapid weight loss, tiredness, ulcers, fevers, night sweats and skin decoloration.
+
+QUIZ LEVEL2 - 
+Question - What points from below are correct about AIDS:
+1. AIDS stands for auto immunodeficiency syndrome.
+2. AIDS is curable and can be completely prevented by treatment.
+3. AIDS is a virus which causes HIV infection.
+4. AIDS may cause unintended weight loss, mouth and genital ulcers.
+
+
+(If 4 then) LEVEL 2 PASSED!
+(Else) restart level 2.
+
+--------------LEVEL 3------------------------
+Level 3 - 
+Welcome to Level 3!
+Objective - In this level you will know about symptoms:
+Point1 - The disease spreads more easily in the first few months after a person is infected.
+Point2 - Initially, symptoms include influenza-like fever, headache, rash and sore throat.
+Point3 - Then, there is asymptomatic stage with not visible or noticeable symptons.
+Point4 - Symptoms now get visible like weight loss, chronic diarrhea, swolen lymph glands,etc.
+Point5 - Due to severe damage to the immune system, the last stage or AIDS kicks in. 
+Point6 - Without treatment, tuberculosis, meningitis, cancers such as Kaposi's Sarcoma can develop.
+QUIZ LEVEL3 -
+Question - What points from below are correct about symptoms of HIV/AIDS:
+1. Those not infected with HIV, might still get infected with AIDS.
+2. Initial symptoms include night sweats, swollen lymph nodes, diarrhea.
+3. After getting infected, the virus does not show major symptoms for a long time.
+4. Once infected with AIDS, you will certainly develop cancer complications.
+
+(If 2 and 3 then) LEVEL 3 Passed!
+(Else) restart level 3.
+
+--------------LEVEL 4--------------------------
+Level 4 - 
+Objective - In this level you will learn about the Diagnosis and Tests for HIV.
+Point1 - For HIV, you can be tested by blood or saliva at your home or a healthcare facility.
+Point2 - There are three types of tests: antigen tests, antibody tests and nucleic acid tests.
+Point3 - HIV treatment includes taking combination of pills by mouth, called antiretroviral therapy (ART).
+Point4 - ARTs goal is to reduce HIV level to an extent so as to reduce its weakening effect on immune system.
+Point5 - Time between exposure and when it becomes detectable is called window period. 
+Point6 - Side-effects of ART vary and may include nausea, headache and dizziness, which are temporary.
+
+QUIZ LEVEL4-
+Question - Select the correct answers:
+1. Tests for HIV include taking a single pill everyday by mouth called ART.
+2. ART helps in curing and completely eliminating HIV.
+3. Testing of HIV during window period will likely result in negative result.
+4. INstead of HIV virus, HIV antibodies are detected in antibody tests.
+
+(IF 3 and 4) then LEVEL 4 Passed!
+(Else) restart level 4.
+
+
+
+--------------LEVEL 5--------------------------
+Level 5 - 
+Objective - In this level you will learn about the Prevention and Management of HIV.
+Point1 - Having sex without a condom and sharing needles to take drugs are the most common ways that HIV spreads.
+Point2 - Use latex condoms instead of condoms made form animal product (like lambskin).
+Point3 - Doctors do suggest medicines like Antiretroviral drugs (ARVs) to help prevent HIV.
+Point4 - Pre-exposure Prophylaxis(PrEP) is a pill to take everyday if you don't have HIV but are at high risk .
+Point5 - If exposed to HIV, you should contact your healthcare provider about post-exposure Prophylaxis (PEP).
+Point6 - Take medications as directed to manage existing risk factors for HIV as recommended by your healthcare.
+
+QUIZ LEVEL5-
+Question - 
+1. If you had a sexual partner with HIV in the past, you shouldn't be worried about getting HIV.
+2. You can have sex without condoms, as long as you take PEPs or PrEPs everyday.
+3. If you have never been exposed to any STI, then no need to test for any in the future.
+4. ARVs can prevent passing HIV from mothers to their children.
+
+(IF 4) then LEVEL 5 Passed!
+(Else) restart level 5.
+--------------------------------------------------------------
+
+
+
+
+Point4 - Symptoms - Increased thirst, Incresed hunger, Fatigue
+Point5 - Symptoms - Slow healing, Unexplained weight loss, Dry skin, Frequent urination
+
+
+
+
+
+
+
+
+
+
+
+* the points are generaly thought of and worried about
+* small and concise points, which keeps the game interesting
+* prepared personalized questionarrie for the different diseases and conditions
+* The complexity of levels increase with levels
+* progressive information guides the player to take the information in a effective manner
+like first intro, then general info,  signs symptoms, then Diagnosis, then management and treatment
+* the questions aim to break the general perceptions or stereotypes
+* the questions also teach sometime, the questions are different from the knowledge points so the importance of level also increases
+

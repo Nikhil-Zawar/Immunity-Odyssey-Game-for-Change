@@ -1,0 +1,128 @@
+-------------LEVEL 1--------------------------
+Level 1 - 
+Welcome to Level 1!
+Objective - You will know about COPD:
+Point1 - COPD is a chronic inflammatory lung disease that causes obstructed airflow from the lungs.
+Point2 - Caused by long-term exposure to irritating gases or particulate matter, often from cigarette smoke.
+Point3 - People with COPD are at increased risk of developing heart disease, lung cancer and other conditions.
+Point4 - COPD is not curable but symptoms can improve if one avoids smoking and exposure to air pollution.
+Point5 - Emphysema and chronic bronchitis are the two most common conditions that contribute to COPD. 
+Point6 - Asthma and COPD are similar in many ways, however COPD is chronic and progressive, unlike Asthma.
+
+QUIZ LEVEL1 - 
+Question - What points from below are correct about COPD:
+1. COPD stands for Chronic Obstructive Pulmonary Disease.
+2. Smoking and air pollution are the most common causes of COPD. 
+3. COPD is acute disease and completely curable with proper treatment.
+4. COPD is an umbrella term for a range of progressive lung diseases.
+
+(If 1,2,4 then) LEVEL 1 PASSED!
+(Else) restart level 1.
+
+
+
+
+-------------LEVEL 2--------------------------
+Level 2 - 
+Welcome to Level 2!
+Objective - In this level you will know about Chronic Bronchitis and Emphysema:
+Point1 - Chronic bronchitis irritates your bronchial tubes, which carry air to and from your lungs. 
+Point2 - In response, the tube swells and mucus builds up along the lining.
+Point3 - Small, hair-like structures called cilia are damaged as a result of chronic bronchitis.
+Point4 - Emphysema is the breakdown of the walls of the tiny air sacs (alveoli) at the end of the bronchial tubes.
+Point5 - The air sacs play a crucial role in transferring oxygen into your blood and carbon dioxide out.
+Point6 - Damage caused by Emphysema to the walls of air sacs makes it hard to get a full breath.
+
+QUIZ LEVEL2 - 
+Question - What points from below are correct about Chronic Bronchitis and Emphysema:
+1. Chronic Bronchitis damages the walls of air sacs, making harder to breath.
+2. Emphysema is caused by allergens.
+3. Chronic Bronchitis damages small hair-like structures called cilia.
+4. Emphysema causes daily cough and mucus production in the bronchial tubes.
+
+
+(If 3 then) LEVEL 2 PASSED!
+(Else) restart level 2.
+
+--------------LEVEL 3------------------------
+Level 3 - 
+Welcome to Level 3!
+Objective - In this level you will know about symptoms and signs of COPD
+Point1 - COPD symptoms often don't appear until significant lung damage has occurred. 
+Point2 - Symptoms may include shortness of breath, wheezing, chronic cough with mucus, swelling in ankles, feets.
+Point3 - Infected people also experience expisodes like exacerbations during which symptoms become worser. 
+Point4 - Some people with COPD get frequent respiratory infections such as colds and the flu.
+Point5 - COPD and asthma share common symptoms (cough, wheeze and difficulty breathing) and people may have both.
+Point6 - People with COPD have a higher risk for lung infections, cancer, heart problems, depression and anxiety.
+
+QUIZ LEVEL3 -
+Question - What points from below are correct about COPD
+1. As COPD progresses, people find it more difficult to carry out their normal daily activities.
+2. Symptoms show up as soon as person gets COPD.
+3. A chronic cough that may produce white, green or yellowish mucus is a symptom of COPD.
+4. You should consult healthcare provider if unexplained weight loss, blood in mucus, sustained swelling in feets.
+
+(If 1 and 3 and 4 then) LEVEL 3 Passed!
+(Else) restart level 3.
+
+--------------LEVEL 4--------------------------
+Level 4 - 
+Objective - In this level you will learn about the Diagnosis and Tests for COPD.
+Point1 - To assess your lungs, your healthcare provider will take your medical history, perform a physical exam.
+Point2 - Physical Exam includes checking blood pressures, examining ENT, checking for swellings in feets.
+Point3 - Providers use a simple test called spirometry to see how well your lungs work which includes blowing air.
+Point4 - Other tests includes pulse oximetry, chest CT-scan, arterial blood gases and ECGs.
+Point5 - There are 4 stages of COPD, mild COPD with slight breathing difficulty, then moderate to severe COPD. 
+Point6 - The last stage, very severe COPD includes shortness of breath for everything and need suplemental oxygen.
+
+QUIZ LEVEL4-
+Question - Select the correct answers:
+1. X-ray can show Emphysema and rule out other lung problems or heart failure.
+2. CT scans can detect Emphysema and screen lung cancer.
+3. Lab tests are used to diagnose COPD to determine the cause of your symptoms.
+4. With stage 2 or higher COPD, you also become prone to lung infections like bronchitis and pneunomia.
+
+(IF 1 and 2 and 4) then LEVEL 4 Passed!
+(Else) restart level 4.
+
+
+
+--------------LEVEL 5--------------------------
+Level 5 - 
+Objective - In this level you will learn about the Management and Treatment of COPD.
+Point1 - COPD isn’t curable, but it can get better by not smoking, avoiding air pollution and getting vaccines.
+Point2 - There are several treatments like inhaling medicines, steroid pills, pulmonary rehabilitation and surgery.
+Point3 - Bronchodilator inhalers are the most important medicines as they relax the airways to keep them open.
+Point4 - Lifestyle changes can improve COPD, quit smoking or vaping, protect yourself from lung infections.
+Point5 - Some inhalers open the airways and may be given regularly to prevent or reduce symptoms.
+Point6 - Inhaled corticosteroids are sometimes given in combination with these to reduce inflammation in the lungs. 
+
+QUIZ LEVEL5-
+Question - Select the correct answers: 
+1. Inhalers are used for reducing or preventing some symptoms.
+2. Inhaled medicines that open and reduce swelling in the airways are the main treatments.
+3. Whatever changes incorporated in lifestyle can't improve COPD once worsen.
+4. Antivirals are used to prevent illness caused by virals mainly influenza which is dangerous for people with COPD.
+
+(IF 1 and 2 and 4) then LEVEL 5 Passed!
+(Else) restart level 5.
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+* the points are generaly thought of and worried about
+* small and concise points, which keeps the game interesting
+* prepared personalized questionarrie for the different diseases and conditions
+* The complexity of levels increase with levels
+* progressive information guides the player to take the information in a effective manner
+like first intro, then general info,  signs symptoms, then Diagnosis, then management and treatment
+* the questions aim to break the general perceptions or stereotypes
+* the questions also teach sometime, the questions are different from the knowledge points so the importance of level also increases
+
