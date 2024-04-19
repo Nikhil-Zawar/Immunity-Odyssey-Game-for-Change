@@ -43,6 +43,16 @@ answered_correctly = False
 
 level = 1
 disease = 'Diabetes'
+# all games images
+diabetes_img = pygame.image.load('img/home_page/Diabetes.png')
+aids_img = pygame.image.load('img/home_page/AIDS.png')
+alziemers_img = pygame.image.load('img/home_page/alziemers.png')
+breast_cancer_img = pygame.image.load('img/home_page/BreastCancer.png')
+copd_img = pygame.image.load('img/home_page/COPD.png')
+heartattack_img = pygame.image.load('img/home_page/HeartAttack.png')
+hepatitis_img = pygame.image.load('img/home_page/Hepatitis.png')
+disease1_img = pygame.image.load('img/home_page/disease1.png')
+disease2_img = pygame.image.load('img/home_page/disease2.png')
 
 # variables to control the movement of the player
 moving_left = False
@@ -60,13 +70,16 @@ thridlayerbg_img = pygame.image.load('img/background/farther.png').convert_alpha
 sky_img = pygame.image.load('img/background/clouds.png').convert_alpha()
 
 # all button images
-start_btn_image = pygame.image.load('img/start_btn.png').convert_alpha()
-end_btn_image = pygame.image.load('img/exit_btn.png').convert_alpha()
-restart_btn_img = pygame.image.load('img/restart_btn.png').convert_alpha()
-read_info_btn_img  = pygame.image.load('img/read_info_btn.png').convert_alpha()
-read_info_btn_img = pygame.transform.scale(read_info_btn_img,  (int(read_info_btn_img.get_width() *0.7), int(read_info_btn_img.get_height() * 0.7)))
-start_quiz_btn_img = pygame.image.load('img/start_quiz_btn.png').convert_alpha()
-submit_quiz_btn_img = pygame.image.load('img/submit_quiz_btn.png').convert_alpha()
+start_btn_image = pygame.image.load('img/buttons/start_btn.png').convert_alpha()
+end_btn_image = pygame.image.load('img/buttons/exit_btn.png').convert_alpha()
+restart_btn_img = pygame.image.load('img/buttons/restart_btn.png').convert_alpha()
+start_quiz_btn_img = pygame.image.load('img/buttons/start_quiz_btn.png').convert_alpha()
+submit_quiz_btn_img = pygame.image.load('img/buttons/submit_quiz_btn.png').convert_alpha()
+infopoint_btns_imgs = []
+for i in range(6):
+	infopoint_btn_img = pygame.image.load(f'img/collected_info/infopoint{i+1}.png')
+	infopoint_btn_img = pygame.transform.scale(infopoint_btn_img, (int(infopoint_btn_img.get_width() * 0.7), int(infopoint_btn_img.get_height() *0.7)))
+	infopoint_btns_imgs.append(infopoint_btn_img)
 
 # bullets, grenades, and item boxes of all three types
 bullet_image = pygame.image.load('img/icons/bullet.png').convert_alpha()
@@ -83,9 +96,10 @@ item_boxes = {
 # information and quiz board images
 infoboard_img = pygame.image.load('img/infoboard.png').convert_alpha()
 quizboard_img = pygame.image.load('img/quiz.png').convert_alpha()
-empty_option_img = pygame.image.load('img/empty_option.png').convert_alpha()
-selected_option_img = pygame.image.load('img/selected_option.png').convert_alpha()
-remove_option_img = pygame.image.load('img/remove_option.png').convert_alpha()
+empty_option_img = pygame.image.load('img/buttons/empty_option.png').convert_alpha()
+selected_option_img = pygame.image.load('img/buttons/selected_option.png').convert_alpha()
+remove_option_img = pygame.image.load('img/buttons/remove_option.png').convert_alpha()
+wrong_ans_img = pygame.image.load('img/wrong_answer.png')
 
 # to load the word we have different tiles and the tiles are basically numbers stored in csv format
 # we will read the csv file for numbers and then according to the number we will decide the tile for it
@@ -382,12 +396,12 @@ class World():
 						decoration = Decoration(image, x * TILE_SIZE, y * TILE_SIZE)
 						decoration_group.add(decoration)
 					elif tile == 12:
-						print("size of info_points_group before : ", len(tokens_group))
-						print("Found a tile of information at : ", x, y, " and index :", idx)
+						# print("size of info_points_group before : ", len(tokens_group))
+						# print("Found a tile of information at : ", x, y, " and index :", idx)
 						token = Tokens(x*TILE_SIZE, y*TILE_SIZE, idx)
 						tokens_group.add(token)
 						idx += 1
-						print("size of info_points_group after : ", len(tokens_group))
+						# print("size of info_points_group after : ", len(tokens_group))
 					elif tile >= 13 and tile <= 14:
 						decoration = Decoration(image, x * TILE_SIZE, y * TILE_SIZE)
 						decoration_group.add(decoration)
@@ -521,14 +535,14 @@ class Tokens(pygame.sprite.Sprite):
 
 class Information(pygame.sprite.Sprite):
 	def __init__(self, x, y, scale, index):
-		print("object createed for information")
+		# print("object createed for information")
 		pygame.sprite.Sprite.__init__(self)
 		self.scale = scale
 		self.index = index
 		self.info_line = all_info[disease][f'Level{level}'][f'Point{self.index + 1}']
 		self.btn_x = 30
 		self.btn_y = 100 + int((self.index)*50)
-		self.image = read_info_btn_img
+		self.image = infopoint_btns_imgs[self.index]
 		self.rect = self.image.get_rect()
 		self.rect.topleft = (self.btn_x, self.btn_y)
 
@@ -549,7 +563,7 @@ class Information(pygame.sprite.Sprite):
 		return parts
 	
 	def display_button(self):
-		read_button = button.Button(self.btn_x, self.btn_y, read_info_btn_img, 1)
+		read_button = button.Button(self.btn_x, self.btn_y, infopoint_btns_imgs[self.index], 1)
 		if read_button.draw(screen):
 			self.display_info()
 
@@ -816,11 +830,11 @@ class Quiz:
 	def check_ans(self):
 		load_ans = all_answer[disease][f'Level{level}']
 		if (self.a == load_ans[0]) and (self.b == load_ans[1]) and (self.c == load_ans[2]) and (self.d == load_ans[3]):
-			answered_correctly = True
-			print(answered_correctly)
+			answered_correctly = 1
+			# print(answered_correctly)
 		else:
-			answered_correctly = False
-			print(answered_correctly)
+			answered_correctly = -1
+			# print(answered_correctly)
 		return answered_correctly
 
 	def update(self):
@@ -838,6 +852,41 @@ class Quiz:
 		return answer
 		
 quiz = Quiz()
+
+def home_page(screen):
+	screen.fill(BG)
+	disease = ""
+	answer_here = False
+	aids_btn = button.Button(100, 50, aids_img, 1)
+	copd_btn = button.Button(400, 50, copd_img, 1)
+	heartattack_btn = button.Button(700, 50, heartattack_img, 1)
+	diabetes_btn = button.Button(100, 300, diabetes_img, 1)
+	breast_cancer_btn = button.Button(400, 300, breast_cancer_img, 1)
+	hepatitis_btn = button.Button(700, 300, hepatitis_img, 1)
+	alziemers_btn = button.Button(100, 550, alziemers_img, 1)
+	if aids_btn.draw(screen):
+		disease = "aids"
+		answer_here = True
+	if copd_btn.draw(screen):
+		disease = "copd"
+		answer_here = True
+	if heartattack_btn.draw(screen):
+		disease = "heart_attack"
+		answer_here = True
+	if diabetes_btn.draw(screen):
+		disease = "diabetes"
+		answer_here = True
+	if breast_cancer_btn.draw(screen):
+		disease = "Breast_Cancer"
+		answer_here = True
+	if hepatitis_btn.draw(screen):
+		disease = "hepatitis"
+		answer_here = True
+	if alziemers_btn.draw(screen):
+		disease = "alziemers"
+		answer_here = True
+	return answer_here, disease
+
 
 #create screen fades
 intro_fade = ScreenFade(1, BLACK, 4)
@@ -875,6 +924,9 @@ with open(f'level{level}_data.csv', newline='') as csvfile:
 world = World()
 player, health_bar = world.process_data(world_data)
 
+open_homepage = False
+homepage_counter = 0
+
 # point1 = InfoPoints(health_box_img, "Hey welcome to the game", 3)
 # load_infopoints()
 
@@ -888,10 +940,23 @@ while run:
 		screen.fill(BG)
 		#add buttons
 		if start_button.draw(screen):
-			begin_game = True
-			begin_intro = True
-		if exit_button.draw(screen):
-			run = False
+			open_homepage = True
+			homepage_counter = 60
+			# begin_game = True
+			# begin_intro = True
+		if open_homepage == True:
+			homepage_counter -= 1
+			if homepage_counter < 0:
+				homepage_counter = 0
+				# print("Here")
+				further, linee = home_page(screen)
+				disease = linee
+				if further:
+					begin_intro = True
+					begin_game = True
+		if open_homepage == False:
+			if exit_button.draw(screen):
+				run = False
 	else:
 		#update background
 		draw_bg()
@@ -970,9 +1035,10 @@ while run:
 			if player.collection == 6:
 				if end_reached == True:
 					# start quiz
+					correctly_answered = 0
 					correctly_answered = quiz.update()
 					# correctly_answered = answered_correctly
-					if correctly_answered:
+					if correctly_answered == 1:
 						if level_complete:
 							begin_intro = True
 							level += 1
@@ -987,8 +1053,9 @@ while run:
 											world_data[x][y] = int(tile)
 								world = World()
 								player, health_bar = world.process_data(world_data)
-					else:
-						pass
+					if correctly_answered == -1:
+						screen.blit(wrong_ans_img, (SCREEN_WIDTH//2 - (wrong_ans_img.get_width()//2), SCREEN_HEIGHT//2 - (wrong_ans_img.get_height()//2)))
+						# pass
 						#restart level
 			else:
 				# player has not collected all 6 info points
