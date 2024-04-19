@@ -20,12 +20,13 @@ clock = pygame.time.Clock()
 FPS = 60
 
 # we define colours as constants to use them frequently
-BG = (144, 201, 120)
+BG = (45, 52, 119)
 RED = (255, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 BLACK = (0, 0, 0)
 PINK = (235, 65, 54)
+HOME_BG = (45, 52, 119)
 
 # some constants and gloabal variables we would need
 GRAVITY = 0.75
@@ -41,17 +42,17 @@ begin_game = False
 begin_intro = False
 answered_correctly = False
 
-level = 1
-disease = 'Diabetes'
+level = 3
+disease = 'diabetes'
 # all games images
 diabetes_img = pygame.image.load('img/home_page/Diabetes.png')
 aids_img = pygame.image.load('img/home_page/AIDS.png')
-alziemers_img = pygame.image.load('img/home_page/alziemers.png')
+alziemers_img = pygame.image.load('img/home_page/alzeimers.png')
 breast_cancer_img = pygame.image.load('img/home_page/BreastCancer.png')
 copd_img = pygame.image.load('img/home_page/COPD.png')
 heartattack_img = pygame.image.load('img/home_page/HeartAttack.png')
 hepatitis_img = pygame.image.load('img/home_page/Hepatitis.png')
-disease1_img = pygame.image.load('img/home_page/disease1.png')
+menstrual_hygiene_img = pygame.image.load('img/home_page/menstrual_hygiene.png')
 disease2_img = pygame.image.load('img/home_page/disease2.png')
 
 # variables to control the movement of the player
@@ -61,13 +62,31 @@ shoot = False
 grenade = False
 grenade_thrown = False
 
+background_images = []
+
 # we will load all the images into some variables so that we can use them again and again
 # the background is four layers
 # the layer which is neared to the player is the first layer
-firstlayerbg_img = pygame.image.load('img/background/buildingsfar.png').convert_alpha()
-secondlayerbg_img = pygame.image.load('img/background/buildingsnear.png').convert_alpha()
-thridlayerbg_img = pygame.image.load('img/background/farther.png').convert_alpha()
-sky_img = pygame.image.load('img/background/clouds.png').convert_alpha()
+firstlayerbg_img = pygame.image.load('img/background/set1/buildingsfar.png').convert_alpha()
+secondlayerbg_img = pygame.image.load('img/background/set1/buildingsnear.png').convert_alpha()
+thridlayerbg_img = pygame.image.load('img/background/set1/farther.png').convert_alpha()
+sky_img = pygame.image.load('img/background/set1/clouds.png').convert_alpha()
+background_images.append([firstlayerbg_img, secondlayerbg_img, thridlayerbg_img, sky_img])
+
+firstlayerbg_img = pygame.image.load('img/background/set2/buildingsfar.png').convert_alpha()
+secondlayerbg_img = pygame.image.load('img/background/set2/buildingsnear.png').convert_alpha()
+thridlayerbg_img = pygame.image.load('img/background/set2/farther.png').convert_alpha()
+sky_img = pygame.image.load('img/background/set2/clouds.png').convert_alpha()
+background_images.append([firstlayerbg_img, secondlayerbg_img, thridlayerbg_img, sky_img])
+
+firstlayerbg_img = pygame.image.load('img/background/set3/buildingsfar.png').convert_alpha()
+secondlayerbg_img = pygame.image.load('img/background/set3/buildingsnear.png').convert_alpha()
+thridlayerbg_img = pygame.image.load('img/background/set3/farther.png').convert_alpha()
+sky_img = pygame.image.load('img/background/set3/clouds.png').convert_alpha()
+background_images.append([firstlayerbg_img, secondlayerbg_img, thridlayerbg_img, sky_img])
+
+
+
 
 # all button images
 start_btn_image = pygame.image.load('img/buttons/start_btn.png').convert_alpha()
@@ -75,6 +94,8 @@ end_btn_image = pygame.image.load('img/buttons/exit_btn.png').convert_alpha()
 restart_btn_img = pygame.image.load('img/buttons/restart_btn.png').convert_alpha()
 start_quiz_btn_img = pygame.image.load('img/buttons/start_quiz_btn.png').convert_alpha()
 submit_quiz_btn_img = pygame.image.load('img/buttons/submit_quiz_btn.png').convert_alpha()
+start_level_btn_img = pygame.image.load('img/buttons/start_level_btn.png').convert_alpha()
+
 infopoint_btns_imgs = []
 for i in range(6):
 	infopoint_btn_img = pygame.image.load(f'img/collected_info/infopoint{i+1}.png')
@@ -99,7 +120,12 @@ quizboard_img = pygame.image.load('img/quiz.png').convert_alpha()
 empty_option_img = pygame.image.load('img/buttons/empty_option.png').convert_alpha()
 selected_option_img = pygame.image.load('img/buttons/selected_option.png').convert_alpha()
 remove_option_img = pygame.image.load('img/buttons/remove_option.png').convert_alpha()
-wrong_ans_img = pygame.image.load('img/wrong_answer.png')
+wrong_ans_img = pygame.image.load('img/wrong_answer.png').convert_alpha()
+level_intro_img = pygame.image.load('img/level_intro.png').convert_alpha()
+wrong_ans_img = pygame.transform.scale(wrong_ans_img, (int(wrong_ans_img.get_width() * 2), int(wrong_ans_img.get_height() * 2)))
+
+instr_page_img = pygame.image.load('img/instrns_page.png')
+continue_btn_img = pygame.image.load('img/continue_button.png')
 
 # to load the word we have different tiles and the tiles are basically numbers stored in csv format
 # we will read the csv file for numbers and then according to the number we will decide the tile for it
@@ -122,15 +148,15 @@ CenturyGothlic_font = pygame.font.SysFont('Century Gothic', 28)
 
 
 #load music and sounds
-# pygame.mixer.music.load('audio/music2.mp3')
-#pygame.mixer.music.set_volume(0.3)
-# pygame.mixer.music.play(-1, 0.0, 5000)
+pygame.mixer.music.load('audio/music2.mp3')
+pygame.mixer.music.set_volume(0.7)
+pygame.mixer.music.play(-1, 0.0, 5000)
 shoot_sound = pygame.mixer.Sound('audio/shot.wav')
-shoot_sound.set_volume(0.05)
+shoot_sound.set_volume(0.9)
 explode_sound = pygame.mixer.Sound('audio/grenade.wav')
-explode_sound.set_volume(0.05)
+explode_sound.set_volume(0.9)
 jump_sound = pygame.mixer.Sound('audio/jump.wav')
-jump_sound.set_volume(0.05)
+jump_sound.set_volume(0.9)
 
 
 # now we define some helper functions 
@@ -138,14 +164,33 @@ def draw_text(text, font, text_col, x, y):
 	img = font.render(text, True, text_col)
 	screen.blit(img, (x, y))
 
-def draw_bg():
+def draw_bg(disease):
 	screen.fill(BG)
 	width = sky_img.get_width()
+	img1 = start_quiz_btn_img
+	img2 = start_quiz_btn_img
+	img3 = start_quiz_btn_img
+	img4 = start_quiz_btn_img
+	if disease in ['menstrual', 'COPD', 'diabetes']:
+		img1 = background_images[0][0]
+		img2 = background_images[0][1]
+		img3 = background_images[0][2]
+		img4 = background_images[0][3]
+	if disease in ['breastcancer', 'aids', 'heartattack']:
+		img1 = background_images[1][0]
+		img2 = background_images[1][1]
+		img3 = background_images[1][2]
+		img4 = background_images[1][3]
+	if disease in ['alzheimers', 'hepatitis']:
+		img1 = background_images[2][0]
+		img2 = background_images[2][1]
+		img3 = background_images[2][2]
+		img4 = background_images[2][3]
 	for x in range(5):
-		screen.blit(sky_img, ((x * width) - scroll_background * 0.5, 0))
-		screen.blit(thridlayerbg_img, ((x * width) - scroll_background * 0.6, SCREEN_HEIGHT - thridlayerbg_img.get_height() - 300))
-		screen.blit(secondlayerbg_img, ((x * width) - scroll_background * 0.7, SCREEN_HEIGHT - secondlayerbg_img.get_height() - 150))
-		screen.blit(firstlayerbg_img, ((x * width) - scroll_background * 0.8, SCREEN_HEIGHT - firstlayerbg_img.get_height()))
+		screen.blit(img4, ((x * width) - scroll_background * 0.5, 0))
+		screen.blit(img3, ((x * width) - scroll_background * 0.6, SCREEN_HEIGHT - img3.get_height() - 300))
+		screen.blit(img2, ((x * width) - scroll_background * 0.7, SCREEN_HEIGHT - img2.get_height() - 150))
+		screen.blit(img1, ((x * width) - scroll_background * 0.8, SCREEN_HEIGHT - img1.get_height()))
 
 # when reseting the level we will need to empty all the sprite groups,
 #  or else they will persist in further levels also
@@ -840,7 +885,7 @@ class Quiz:
 	def update(self):
 		answer = False
 		begin_quiz_button = button.Button(SCREEN_WIDTH//2 -50, SCREEN_HEIGHT//2 + 50 , start_quiz_btn_img, 1)
-		submit_quiz_button = button.Button(150, self.y + self.max_offset + 20 , submit_quiz_btn_img, 1)
+		submit_quiz_button = button.Button(35, self.y + 50 , submit_quiz_btn_img, 1)
 		if begin_quiz_button.draw(screen):
 			self.start_quiz = True
 		if self.start_quiz:
@@ -851,10 +896,45 @@ class Quiz:
 				answer = self.check_ans()
 		return answer
 		
+class Level_Intro:
+	def __init__(self):
+		self.x = SCREEN_WIDTH//4
+		self.y = SCREEN_HEIGHT//4
+		self.image =  level_intro_img
+		self.image = pygame.transform.scale(self.image, (int(SCREEN_WIDTH//2), int(SCREEN_HEIGHT//2)))
+		self.display_image = False
+		self.start_level = False
+		self.header = f"Welcome to Level {level} !!"
+		self.level_objective = "No Data"
+
+	def update(self, disease):
+		self.level_objective = all_info[disease][f'Level{level}']['Objective']
+		screen.fill(GREEN)
+		screen.blit(self.image, (self.x, self.y))
+		draw_text(self.header, Helvitica_font, WHITE, self.x + 20, self.y + 20)
+		draw_text(self.level_objective, Futura_font, WHITE, self.x + 20, self.y  + 100)
+		start_level_btn = button.Button((SCREEN_WIDTH//2), (3*(SCREEN_HEIGHT//4) + 50), start_level_btn_img, 1 )
+		if start_level_btn.draw(screen):
+			self.start_level = True
+		return self.start_level
+	
+	
+	def kill(self):
+		self.kill()
+
+
 quiz = Quiz()
 
+def instruction_page(screen):
+	screen.blit(instr_page_img, (0,0))
+	continue_on = False
+	continue_btn = button.Button(50, 700, continue_btn_img, 1)
+	if continue_btn.draw(screen):
+		continue_on = True
+	return continue_on
+
 def home_page(screen):
-	screen.fill(BG)
+	screen.fill(HOME_BG)
 	disease = ""
 	answer_here = False
 	aids_btn = button.Button(100, 50, aids_img, 1)
@@ -864,14 +944,16 @@ def home_page(screen):
 	breast_cancer_btn = button.Button(400, 300, breast_cancer_img, 1)
 	hepatitis_btn = button.Button(700, 300, hepatitis_img, 1)
 	alziemers_btn = button.Button(100, 550, alziemers_img, 1)
+	menstraul_hygiene_btn = button.Button(400, 550, menstrual_hygiene_img, 1)
+	coming_soon = button.Button(700, 550, disease2_img, 1)
 	if aids_btn.draw(screen):
 		disease = "aids"
 		answer_here = True
 	if copd_btn.draw(screen):
-		disease = "copd"
+		disease = "COPD"
 		answer_here = True
 	if heartattack_btn.draw(screen):
-		disease = "heart_attack"
+		disease = "heartattack"
 		answer_here = True
 	if diabetes_btn.draw(screen):
 		disease = "diabetes"
@@ -883,8 +965,13 @@ def home_page(screen):
 		disease = "hepatitis"
 		answer_here = True
 	if alziemers_btn.draw(screen):
-		disease = "alziemers"
+		disease = "alzheimers"
 		answer_here = True
+	if menstraul_hygiene_btn.draw(screen):
+		disease = "menstrual"
+		answer_here = True
+	if coming_soon.draw(screen):
+		pass
 	return answer_here, disease
 
 
@@ -926,6 +1013,10 @@ player, health_bar = world.process_data(world_data)
 
 open_homepage = False
 homepage_counter = 0
+intro_done = False
+disp_instrn = False
+start_page = True
+instrn_continue = False
 
 # point1 = InfoPoints(health_box_img, "Hey welcome to the game", 3)
 # load_infopoints()
@@ -939,12 +1030,20 @@ while run:
 		#draw menu
 		screen.fill(BG)
 		#add buttons
-		if start_button.draw(screen):
-			open_homepage = True
-			homepage_counter = 60
-			# begin_game = True
-			# begin_intro = True
-		if open_homepage == True:
+		if start_page == True:
+			if start_button.draw(screen):
+				disp_instrn = True
+				start_page = False
+			if exit_button.draw(screen):
+				run = False
+		if disp_instrn:
+			screen.blit(instr_page_img, (0,0))
+			continue_btn = button.Button(50, 700, continue_btn_img, 1)
+			if continue_btn.draw(screen):
+				disp_instrn = False
+				open_homepage = True
+				homepage_counter = 60
+		if open_homepage == True and disp_instrn == False:
 			homepage_counter -= 1
 			if homepage_counter < 0:
 				homepage_counter = 0
@@ -954,12 +1053,9 @@ while run:
 				if further:
 					begin_intro = True
 					begin_game = True
-		if open_homepage == False:
-			if exit_button.draw(screen):
-				run = False
 	else:
 		#update background
-		draw_bg()
+		draw_bg(disease)
 		#draw world map
 		world.draw()
 		#show player health
@@ -1005,10 +1101,13 @@ while run:
 
 		#show intro
 		if begin_intro == True:
-			if intro_fade.fade():
-				begin_intro = False
-				intro_fade.fade_counter = 0
-
+			level_begin = Level_Intro()
+			if intro_done == False:
+				intro_done  = level_begin.update(disease)
+			if intro_done:
+				if intro_fade.fade():
+					begin_intro = False
+					intro_fade.fade_counter = 0
 
 		#update player actions
 		if player.alive:
@@ -1041,6 +1140,7 @@ while run:
 					if correctly_answered == 1:
 						if level_complete:
 							begin_intro = True
+							intro_done = False
 							level += 1
 							scroll_background = 0
 							world_data = reset_level()
@@ -1091,7 +1191,7 @@ while run:
 				moving_right = True
 			if event.key == pygame.K_SPACE:
 				shoot = True
-			if event.key == pygame.K_q:
+			if event.key == pygame.K_TAB:
 				grenade = True
 			if event.key == pygame.K_UP and player.alive:
 				player.jump = True
@@ -1108,7 +1208,7 @@ while run:
 				moving_right = False
 			if event.key == pygame.K_SPACE:
 				shoot = False
-			if event.key == pygame.K_q:
+			if event.key == pygame.K_TAB:
 				grenade = False
 				grenade_thrown = False
 

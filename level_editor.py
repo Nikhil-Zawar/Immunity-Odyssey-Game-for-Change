@@ -32,10 +32,10 @@ scroll_speed = 1
 
 
 #load images
-pine1_img = pygame.image.load('img/background/buildingsnear.png').convert_alpha()
-pine2_img = pygame.image.load('img/background/buildingsfar.png').convert_alpha()
-mountain_img = pygame.image.load('img/background/farther.png').convert_alpha()
-sky_img = pygame.image.load('img/background/clouds.png').convert_alpha()
+pine1_img = pygame.image.load('img/background/set1/buildingsnear.png').convert_alpha()
+pine2_img = pygame.image.load('img/background/set1/buildingsfar.png').convert_alpha()
+mountain_img = pygame.image.load('img/background/set1/farther.png').convert_alpha()
+sky_img = pygame.image.load('img/background/set1/clouds.png').convert_alpha()
 #store tiles in a list
 img_list = []
 for x in range(TILE_TYPES):
