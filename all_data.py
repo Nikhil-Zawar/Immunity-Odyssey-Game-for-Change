@@ -1,6 +1,7 @@
 all_info = {
 	'diabetes' : {
         "Level1" : {
+            "Objective" : "In this level you will know some general information about diabetes",
             "Point1" : "Diabetes is a condition that happens when your blood sugar is too high.",
             "Point2" : "It develops when the pancreas doesn\'t make enough(or no) insulin to digest the sugars.",
             "Point3" : "There are multiple types of diabetes - majorly Type1 and Type2 diabetes.",
@@ -9,7 +10,6 @@ all_info = {
             "Point6" : "Chronic high blood sugar level can cause problems like heart disease, nerve damages and eye issues."
         },
         "Level2" : {
-            "Intro" : "Welcome to Level 2!",
             "Objective": "In this level you will know about \"Type 2 Diabetes\" - Most Common Type",
             "Point1" : "This is the most common type of diabetes, where the body doesn't make enough insulin.",
             "Point2" : "This mainly affects adults. The body cells don't respond to insulin.",
@@ -17,6 +17,33 @@ all_info = {
             "Point4" : "Risk Factors for Type2 diabetes : Overweight, Obese, High BP, High Cholestrol.",
             "Point5" : "Management - More exercises, Eat variety of nutritious food, Blood sugar monitoring.",
             "Point6" : "With lifestyle changes this disease can be reversed to a large extent.",
+        },
+        "Level3" : {
+            "Objective" : "In this level you will know about \"Type1 diabetes\"",
+            "Point1" : "It is chronic(life-long) disease that prevents your pancreas from making insulin.",
+            "Point2" : "It needs dialy management with synthetic insulin injections and blood sugar monitoring.",
+            "Point3" : "Anyone at can develop this, but the ages 4 to 6 and in early puberty are at more risk.",
+            "Point4" : "Symptoms are Fatigue, Excessive hunger & thirst, Frequent urination and blurred vision.",
+            "Point5" : "Untreated Type1 diabetes can be life-threatening and can be diagonised with Blood glucose test.",
+            "Point6" : "It is not caused by eating too much sugar, as Type1 diabetes is an autoimmune condition.",
+        },
+        "Level4" : {
+            "Objective" : "In this level you will learn about the Diagnosis and Tests for diabetes.",
+            "Point1" : "For Diagnosis you can take a Fasting Blood glucose test which indicates  your blood sugar levels.",
+            "Point2" : "For this test, you don't eat or drink anything except water for at least eight hours before the test.",
+            "Point3" : "The food can greatly affect the blood sugar, and the test aims to see the baseline blood sugar levels.",
+            "Point4" : "The sugar levels less than 100(mg/dL) are normal; 100 to 125 indicate prediabetes.",
+            "Point5" : "The sugar levels above 126(mg/dL) indicates diabetes. Several other checks determine its type.",
+            "Point6" : "Chronic high blood sugar levels can cause severe irreverisble complications like shortening of lifespan.",
+        },
+        "Level5" : {
+            "Objective" : "In this level you will learn about the Management and Treatment of diabetes.",
+            "Point1" : "Meal planning and choosing a healthy diet greatly impacts the blood sugar levels.",
+            "Point2" : "If you take insulin, then counting carbs in the foods and drinks is a large part of management.",
+            "Point3" : "Physical activity increases insulin sensitivity and helps reduce insulin resistance.",
+            "Point4" : "It is crucial to limit alcohol intake or avoid it and quit smoking for the medications to work.",
+            "Point5" : "Getting adequate sleep, of typically 7-9 hours or seek treatment for sleep disorders.",
+            "Point6" : "Take medications as directed to manage existing risk factors for heart disease."
         }
     },
     'aids' : {
@@ -65,7 +92,6 @@ all_info = {
             "Point5" : "If exposed to HIV, you should contact your healthcare provider about post-exposure Prophylaxis (PEP).",
             "Point6" : "Take medications as directed to manage existing risk factors for HIV as recommended by your healthcare."
         }
-
     },
     'heartattack':{
         "Level1" : {
@@ -161,7 +187,7 @@ all_info = {
             "Point6" : "Inhaled corticosteroids are sometimes given in combination with these to reduce inflammation in the lungs."
         },
     },
-    'alzheimer':{
+    'alzheimers':{
         "Level1":{
             "Objective" : "You will know about Alzheimers",
             "Point1" : "Alzheimer's disease causes a decline in memory, thinking, learning and organizing skills over time. ",
@@ -214,7 +240,7 @@ all_info = {
 all_quiz = {
     "diabetes" : {
         'Level1' : {
-            "Question" : "What points from below are correct about Type2 diabetes:",
+            "Question" : "What points from below are correct about diabetes:",
             "Option1" : "1. Diabetes is a condition that occurs when your blood sugar is too low.",
             "Option2" : "2. Chronic high blood sugar levels cause complications such as heart disease.",
             "Option3" : "3. It can affect the eyes, leading to conditions like diabetic retinopathy.",
@@ -226,7 +252,29 @@ all_quiz = {
             "Option2": "2. Type2 diabetes happens only by heredity of the same condition.",
             "Option3": "3. During this, you feel more thirsty and hungrier than usual.",
             "Option4": "4. In Type2 diabetes, the pancreas do not produce enough insulin.",
+        },
+        'Level3' : {
+            "Question" : "What points from below are correct about Type1 diabetes:",
+            "Option1" : "1. Children at more risk for Type1 diabetes and develop high blood sugar level",
+            "Option2" : "2. For Type1 diabetes it is necessary to take synthetic insulin every day.",
+            "Option3" : "3. Lifestyle management is no where related to Type1 diabetes at all.",
+            "Option4" : "4. Type1 diabetes is caused by excessive intake of sugary foods.",
+        },
+        'Level4 ': {
+            "Question" : "Select the correct answers:",
+            "Option1" : "1. A person with blood sugar level of 150(mg/dL) is not a diabetic patient.",
+            "Option2" : "2. You can drink or eat anything before your fasting blood sugar test.",
+            "Option3" : "3. Your body gets used to chronic high blood sugar levels with time.",
+            "Option4" : "4. You can take the fasting blood sugar test at home or in a clinic."
+        },
+        'Level5' : {
+            "Question" : "Select the correct statements:",
+            "Option1" : "1. Physical exercise decrease the insulin levels and should be avoided during diabetes.",
+            "Option2" : "2. You should consult a doctor if you have symptoms like increased thirst and frequent urination.",
+            "Option3" : "3. With proper management, people with diabetes can and should engage in physical activities.",
+            "Option4" : "4. Many women with diabetes can have healthy pregnancies and deliver healthy babies."
         }
+
     },
     "aids" :{
         "Level1" :{
@@ -339,7 +387,7 @@ all_quiz = {
             "Option4" : "Antivirals are used to prevent illness caused by virals mainly influenza which is dangerous for people with COPD.",
         },
     },
-    "alzheimer" : {
+    "alzheimers" : {
         "Level1" : {
             "Question" : "What points from below are correct about Alzheimer's?",
             "Option1" : "Alzheimer is curable.",
@@ -378,10 +426,14 @@ all_quiz = {
     },
 }
 
+
 all_answer = {
     "diabetes" : {
         'Level1' : [False, True, True, True],
-        'Level2' : [False, False, True, True]
+        'Level2' : [False, False, True, True],
+        'Level3' : [True, True, True, False],
+        'Level4' : [True, False, True, False],
+        'Level5' : [True, True, True, True]
     },
     "aids":{
         "Level1": [False,True,False,False],
@@ -404,7 +456,7 @@ all_answer = {
         "Level4": [True,True,False,True],
         "Level5": [True,True,False,True],
     },
-    "alzheimer":{
+    "alzheimers":{
         "Level1": [False,True,False,True],
         "Level2": [True,True,False,False],
         "Level3": [False,False,False,True],
