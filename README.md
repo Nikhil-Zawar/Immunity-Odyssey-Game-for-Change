@@ -1,6 +1,8 @@
 # Immunity Odyssey
 
-Nikhil Zawar (2022CS1)
+This is a game designed by Nikhil Zawar and Mahir Patel which aims at raising awareness about health condiditons & dieseases.
+
+Nikhil Zawar (2022CS11106)
 \
 Mahir Patel (2022CS11079)
 
