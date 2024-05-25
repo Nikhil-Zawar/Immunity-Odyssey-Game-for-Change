@@ -2,6 +2,12 @@
 
 This is a game designed by Nikhil Zawar and Mahir Patel which aims at raising awareness about health condiditons & dieseases.
 
+-------
+To play the game:
+- Clone the repository and install all the requirements as in requirement.txt
+- Simply run the main.py file
+-------
+
 Nikhil Zawar (2022CS11106)
 \
 Mahir Patel (2022CS11079)
